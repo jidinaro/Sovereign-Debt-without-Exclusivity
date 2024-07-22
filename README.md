@@ -18,7 +18,10 @@ Before you begin, ensure you have met the following requirements:
    ```
       pip install quantecon
    ```
-
+* [Numba](https://numba.pydata.org/) for optimizing the VFI process.
+  ```
+      pip install numba
+  ```
  ## Installing the Solver
 
 To install the Sovler, just download SL.py, and open with your edit IDLE to configure and execute it.
@@ -26,12 +29,12 @@ To install the Sovler, just download SL.py, and open with your edit IDLE to conf
 ## Using SL.py
 
 The VFI algorithm works efficiently. One could use it with different values of parameters. Output examples are below:
+<img src="https://github.com/user-attachments/assets/42b6c560-af63-42a0-8c71-ec4a155aea3e" width=35% height=35%>
+<img src="https://github.com/user-attachments/assets/ecbfb5ee-ff70-40af-87e9-af924aac4533" width=35% height=35%>
+<img src="https://github.com/user-attachments/assets/9b312dc0-a807-43ea-850f-51c94c766115" width=35% height=35%>
+<img src="https://github.com/user-attachments/assets/10cbcca4-cd4b-4ce1-89c0-df738a76ec6a" width=35% height=35%>
+<img src="https://github.com/user-attachments/assets/383b06e5-9a80-43ac-a2ac-16db882fa157" width=35% height=35%>
 
-![VF_Bl](https://github.com/user-attachments/assets/42b6c560-af63-42a0-8c71-ec4a155aea3e)
-![VF_Bs](https://github.com/user-attachments/assets/ecbfb5ee-ff70-40af-87e9-af924aac4533)
-![short_bond_pricing](https://github.com/user-attachments/assets/9b312dc0-a807-43ea-850f-51c94c766115)
-![long_bond_pricing](https://github.com/user-attachments/assets/10cbcca4-cd4b-4ce1-89c0-df738a76ec6a)
-![VF_3D](https://github.com/user-attachments/assets/383b06e5-9a80-43ac-a2ac-16db882fa157)
 
 ## Next Features
 Next features to be added are: 
