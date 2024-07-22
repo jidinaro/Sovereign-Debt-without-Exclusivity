@@ -1,5 +1,5 @@
 # Sovereign-Debt-without-Exclusivity
-Python solver of a Sovereign debt model with one period and long period bonds.
+Using Quantecon's [solver](https://python-advanced.quantecon.org/arellano.html) for the Arellano Economy, I've included an upgraded Python solver of a Sovereign debt model with one period and long period bonds.
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
