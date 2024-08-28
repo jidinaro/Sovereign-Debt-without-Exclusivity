@@ -29,12 +29,16 @@ To install the Sovler, just download SL.py, and open with your edit IDLE to conf
 ## Using SL.py
 
 The VFI algorithm works efficiently. One could use it with different values of parameters. Output examples are below:
-<img src="https://github.com/user-attachments/assets/42b6c560-af63-42a0-8c71-ec4a155aea3e" width=35% height=35%>
-<img src="https://github.com/user-attachments/assets/ecbfb5ee-ff70-40af-87e9-af924aac4533" width=35% height=35%>
-<img src="https://github.com/user-attachments/assets/9b312dc0-a807-43ea-850f-51c94c766115" width=35% height=35%>
-<img src="https://github.com/user-attachments/assets/10cbcca4-cd4b-4ce1-89c0-df738a76ec6a" width=35% height=35%>
-<img src="https://github.com/user-attachments/assets/383b06e5-9a80-43ac-a2ac-16db882fa157" width=35% height=35%>
-
+<img src="https://github.com/user-attachments/assets/d10a6182-815b-4854-8cfc-1e185d65857c" width=35% height=35%>
+<img src="https://github.com/user-attachments/assets/d0e43743-35b7-4759-86e0-6d2560ef1117" width=35% height=35%>
+<img src="https://github.com/user-attachments/assets/34a4bdc9-1858-4aae-a3c9-a880ab2f8fa8" width=35% height=35%>
+<img src="https://github.com/user-attachments/assets/63aee0c1-b0e0-4da9-8445-33dba986c86e" width=35% height=35%>
+<img src="https://github.com/user-attachments/assets/42339d51-c37d-4821-9463-50884243db5a" width=35% height=35%>
+![qs](https://github.com/user-attachments/assets/d10a6182-815b-4854-8cfc-1e185d65857c)
+![ql](https://github.com/user-attachments/assets/d0e43743-35b7-4759-86e0-6d2560ef1117)
+![vf_bs](https://github.com/user-attachments/assets/34a4bdc9-1858-4aae-a3c9-a880ab2f8fa8)
+![vf_bl](https://github.com/user-attachments/assets/63aee0c1-b0e0-4da9-8445-33dba986c86e)
+![vf_3d](https://github.com/user-attachments/assets/42339d51-c37d-4821-9463-50884243db5a)
 
 ## Next Features
 Next features to be added are: 
