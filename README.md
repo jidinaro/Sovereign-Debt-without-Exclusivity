@@ -1,5 +1,40 @@
 # Sovereign-Debt-without-Exclusivity
-Using Quantecon's [solver](https://python-advanced.quantecon.org/arellano.html) for the Arellano Economy, I've included an upgraded Python solver of a Sovereign debt model with one period and long period bonds.
+Using Quantecon's [solver](https://python-advanced.quantecon.org/arellano.html) for the Arellano Economy, I've included an upgraded Python solver of a Sovereign debt model with one period and long period bonds, where lenders do not have exclusivity to the governments, thus they must forecast long bond prices.
+
+### Model Setup
+
+Government maximizes the constrained lifetime utility choosing optimal maturity of debt $b'_s$ and $b'_l$, and whether to default tomorrow, given prices.
+```math
+V^R\left(b_S, b_L, y\right)=\underset{c, b_S^{\prime}, b_L^{\prime}}{Max}\left\{u(c)+\beta E\left[V\left(b_S^{\prime}, b_L^{\prime}, y^{\prime}\right) \mid y\right]\right\}
+```
+```math
+\text { s.t. } \quad c=y-b_S-\delta b_L+q_S\left(b_S^{\prime}, b_L^{\prime}, y\right) b_S^{\prime}+q_L\left(b_S^{\prime}, b_L^{\prime}, y\right)\left(b_L^{\prime}-(1-\delta) b_L\right)
+```
+
+```math
+u^{\prime}(c) q_S\left(b_S^{\prime}, b_L^{\prime}, y\right)+\beta E\left[V_1\left(b_S^{\prime}, b_L^{\prime}, y^{\prime}\right) \mid y\right]=0
+```
+```math
+u^{\prime}(c) q_L\left(b_S^{\prime}, b_L^{\prime}, y\right)+\beta E\left[V_2\left(b_S^{\prime}, b_L^{\prime}, y^{\prime}\right) \mid y\right]=0
+```
+```math
+q_S\left(b_S^{\prime}, b_L^{\prime}, y\right)=\frac{1}{1+r} E\left[1-\hat{d}\left(b_S^{\prime}, b_L^{\prime}, y^{\prime}\right) \mid y\right]
+```
+```math
+q_L\left(b_S^{\prime}, b_L^{\prime}, y\right)=\frac{1}{1+r} E\left[\left(1-\hat{d}\left(b_S^{\prime}, b_L^{\prime}, y^{\prime}\right)\right)\left(\delta+(1-\delta) q_L\left(\hat{b}_S\left(b_S^{\prime}, b_L^{\prime}, y^{\prime}\right), \hat{b}_L\left(b_S^{\prime}, b_L^{\prime}, y^{\prime}\right), y^{\prime}\right)\right) \mid y\right]
+```
+
+
+
+#### Optimality Condition
+
+The optimal maturity of debt is given by the following optimality condition that arises from constrained lifetime utility maximization, which implies that expected marginal rate of substitution equals the ratio of prices:
+
+```math
+    \underbrace{\frac{\mathbb{E}\left[V_{b'_s}(b'_s, b'_l,y')\bigg| y \right]}{\mathbb{E}\left[V_{b'_l}(b'_s, b'_l,y')\bigg| y\right]} }_{\textbf{$\mathbb{E}\left[MRS_{b'_{s},b'_{l}}\bigg| y \right]$}} 
+    = 
+    \underbrace{\frac{q_s(b'_s, b'_l,y)}{q_l(b'_s, b'_l,y)}}_{\text{Price Ratio}}
+```
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
