@@ -10,13 +10,12 @@ V^R\left(b_S, b_L, y\right)=\underset{c, b_S^{\prime}, b_L^{\prime}}{Max}\left\{
 ```math
 \text { s.t. } \quad c=y-b_S-\delta b_L+q_S\left(b_S^{\prime}, b_L^{\prime}, y\right) b_S^{\prime}+q_L\left(b_S^{\prime}, b_L^{\prime}, y\right)\left(b_L^{\prime}-(1-\delta) b_L\right)
 ```
+Default decision is given by:
+```math
+d(b_s, b_l,  y) = \bf{\left\{ \begin{array}{cc} {1 \text{ if } V^R(b_S, b_L, y) < V^D(b_S, b_L, y)}\\{0 \text{ otw}} \end{array}\right.}
+```
+Bond prices are given by zero profit of financial intermediaries:
 
-```math
-u^{\prime}(c) q_S\left(b_S^{\prime}, b_L^{\prime}, y\right)+\beta E\left[V_1\left(b_S^{\prime}, b_L^{\prime}, y^{\prime}\right) \mid y\right]=0
-```
-```math
-u^{\prime}(c) q_L\left(b_S^{\prime}, b_L^{\prime}, y\right)+\beta E\left[V_2\left(b_S^{\prime}, b_L^{\prime}, y^{\prime}\right) \mid y\right]=0
-```
 ```math
 q_S\left(b_S^{\prime}, b_L^{\prime}, y\right)=\frac{1}{1+r} E\left[1-\hat{d}\left(b_S^{\prime}, b_L^{\prime}, y^{\prime}\right) \mid y\right]
 ```
