@@ -1,5 +1,5 @@
 # Sovereign-Debt-without-Exclusivity
-Using Quantecon's [solver](https://python-advanced.quantecon.org/arellano.html) for the Arellano Economy, I've included an upgraded Python solver of a Sovereign debt model with one period and long period bonds, where lenders do not have exclusivity to the governments, thus they must forecast long bond prices.
+Using Quantecon's [solver](https://python-advanced.quantecon.org/arellano.html) for the Arellano Economy, I've included an upgraded Python solver of a Sovereign debt model with one period and long period bonds, where lenders do not have exclusivity to the governments, thus they must forecast long bond prices as well.
 
 ### Model Setup
 
