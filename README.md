@@ -27,10 +27,12 @@ q_L\left(b_S^{\prime}, b_L^{\prime}, y\right)=\frac{1}{1+r} E\left[\left(1-\hat{
 
 #### Optimality Condition
 
-The optimal maturity of debt is given by the following optimality condition that arises from constrained lifetime utility maximization, which implies that expected marginal rate of substitution equals the ratio of prices:
-
+The optimal maturity of debt is given by the following optimality condition that arises from constrained lifetime utility maximisation, which implies that expected marginal rate of substitution equals the ratio of prices:
 ```math
-    \underbrace{\frac{\mathbb{E}\left[V_{b'_s}(b'_s, b'_l,y')\bigg| y \right]}{\mathbb{E}\left[V_{b'_l}(b'_s, b'_l,y')\bigg| y\right]} }_{\textbf{$\mathbb{E}\left[MRS_{b'_{s},b'_{l}}\bigg| y \right]$}} 
+    \underbrace{
+  \frac{\mathbb{E}\left[V_{b'_s}(b'_s, b'_l,y') \big| y \right]}{
+        \mathbb{E}\left[V_{b'_l}(b'_s, b'_l,y') \big| y \right]}
+}_{\mathbb{E}\left[MRS_{b'_{s},b'_{l}} \big| y \right]}
     = 
     \underbrace{\frac{q_s(b'_s, b'_l,y)}{q_l(b'_s, b'_l,y)}}_{\text{Price Ratio}}
 ```
